@@ -8,7 +8,7 @@
       "name": "akamai-purge",
       "version": "1.0.0",
       "description": "Purge content from the Edge",
-      "bin": "https://github.com/akamai/cli-purge/releases/download/{{.Version}}/akamai-{{.Name}}-{{.Version}}-{{.OS}}{{.Arch}}{{.BinSuffix}}",
+      "bin": "https://github.com/tristanbaoui/cli-purge/build/{{.Version}}/akamai-{{.Name}}-{{.Version}}-{{.OS}}{{.Arch}}{{.BinSuffix}}",
       "auto-complete": true
     }
   ]
