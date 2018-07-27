@@ -92,10 +92,11 @@ func purge(purgeType string, c *cli.Context) error {
 
 	fmt.Fprintf(
 		akamai.App.ErrWriter,
-		"Purged %s object%s (ETA: %s seconds)\n",
+		"Purged %s object%s (ETA: %s seconds)\nPurge ID: %s",
 		color.BlueString("%d", len(purge.Objects)),
 		plural,
 		color.BlueString("%d", res.EstimatedSeconds),
+		color.GreenString(res.PurgeID),
 	)
 
 	return nil
